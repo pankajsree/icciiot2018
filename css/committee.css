@@ -1,0 +1,19 @@
+.committee-mem-name {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.committee-mem-institute {
+    color: #555;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.committee-tabs-content img {
+    width: 100%;
+    height: auto;
+}
+
+.committee-mem-det {
+    padding-top: 1rem;
+    text-align: justify;
+}

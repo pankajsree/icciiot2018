@@ -1,0 +1,27 @@
+#about-conference {
+    padding-top: 4rem;
+}
+
+#imp-dates {
+    padding-bottom: 0;
+}
+
+.papers-timeline-caption {
+    padding-left: 15px;
+}
+
+.session-pad {
+    padding: 1rem 0;
+}
+
+.session-grid {
+    padding: 0 1rem;
+}
+
+.site-name {
+    font-size: 1.5rem;
+    color: rebeccapurple;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+}

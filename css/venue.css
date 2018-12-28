@@ -1,0 +1,54 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+.col-spacing {
+    padding: 0.8rem;
+}
+
+#things-to-do img {
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    -webkit-filter: grayscale(0.2);
+            filter: grayscale(0.2);
+}
+
+#things-to-do img:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+}
+
+#things-to-do ul li {
+    font-size: 0.95rem;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+.institute {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.to-do-name {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.img-no-overflow {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+footer {
+    margin-top: 0;
+}
