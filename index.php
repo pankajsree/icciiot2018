@@ -1,86 +1,27 @@
+<?php
+    require_once("common.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
         <title>Home - ICCIIoT 2018</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="ICCIIoT, conference, Computational Intelligence, Computational, Intelligence, IoT, data, Internet of Things, nitagartala, nita, National Institute of Technology Agartala, agartala, nit" />
         <meta name="description"  content="International Conference on Computational Intelligence & IoT (ICCIIoT) 2018 ... NIT Agartala ... December 14-15" />
-        <link rel="shortcut icon" type="image/png" href="images/logo/favicon5.png" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+
+        <?= $head ?>
+
     </head>
+
     <body id="body-index">
 
-        <nav class="navbar navbar-expand-xl bg-light navbar-light fixed-top">
-            <a class="navbar-brand" href="index.html">
-                <span class="nav-brand-bg">ICCIIoT</span>&nbsp;2018
-            </a>
-            <button id="btn-collapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-                <span class="cross"><i class="fas fa-times"></i></span>
-            </button>
-            <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
-                <ul class="navbar-nav justify-content-end">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call for Papers</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="call-for-papers.html">About ICCII<span class="text-lowercase">o</span>T 2018</a>
-                            <a class="dropdown-item" href="call-for-papers.html#imp-dates">Important Dates</a>
-                            <a class="dropdown-item" href="call-for-papers.html#guidelines">Submission Guidelines</a>
-                            <a class="dropdown-item" href="call-for-papers.html#indexing-papers">Indexing</a>
-                            <a class="dropdown-item" href="call-for-papers.html#tracks">Conference Tracks</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="committees.html">Committees</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="register.html">Registration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sessions.html">Special Sessions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sponsors.html">Sponsors</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Venue</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                            <a class="dropdown-item" href="venue.html">Conference Venue</a>
-                            <a class="dropdown-item" href="venue.html#conf-accomodation">Accommodation</a>
-                            <a class="dropdown-item" href="venue.html#transportation">Transportation</a>
-                            <a class="dropdown-item" href="venue.html#things-to-do">Things to Do</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-link d-inline-block"><img src="images/sponsors/elsevier2.png" title="Elsevier" alt="Elsevier"></div>
-                        <a class="nav-link d-inline-block d-xl-none" href="http://www.nita.ac.in/index.html" target="_blank"><img src="images/sponsors/nita-logo.png" class="sm-menu-nita" title="NIT Agartala"alt="NIT Agartala"></a>
-                    </li>
-                    <li class="nav-item nita">
-                        <a class="nav-link" href="http://www.nita.ac.in/index.html" target="_blank"><img src="images/sponsors/nita-logo.png" title="NIT Agartala" alt="NIT Agartala"></a>
-                    </li>
-                </ul>
-            </div>
-            <div id="nita-xl">
-                <a href="http://www.nita.ac.in/index.html" target="_blank"><img src="images/sponsors/nita-logo.png" title="NIT Agartala" alt="NIT Agartala"></a>
-            </div>
-        </nav>
+        <?= $nav ?>
+        <?= $anchor ?>
 
-        <div id="anchor-top"><i class="fas fa-angle-up"></i></div>
-        <div id="anchor-bottom"><i class="fas fa-angle-down"></i></div>
+        <!-- Conference Details & Carousel -->
 
         <div class="container-fluid home">
             <div class="row flex-row-reverse">
-
                 <div class="col-sm-12 col-lg-6 intro-text">
                     <div class="intro-heading bold">International Conference on Computational&nbsp;Intelligence & IoT&nbsp;(ICCIIoT)&nbsp;2018</div>
                     <div class="time-venue"><span class="text-underline">14-15 December 2018</span><br />
@@ -163,6 +104,7 @@
             </div>
         </div>
 
+        <!-- Conference Introduction -->
 
         <section id="about" class="container">
             <h1 class="font-size-2"><span class="bb-short-underline">ICCIIoT 2018 Conference</span></h1>
@@ -171,9 +113,11 @@
                 <p>Through sharing and networking, ICCIIoT 2018 will provide an opportunity for researchers, practitioners and educators to exchange research evidence, practical experiences and innovative ideas on issues related to the Conference theme.</p>
                 <p>Please consider submitting to this conference.  We are interested in the entire range of concepts from theory to practice, including case studies, works-in-progress, and conceptual explorations.</p>
                 <p>Now smart sensors can collaborate directly with machine without human involvement to automate decision making or to control a task using Computational Intelligence. Smart technologies including green electronics, green radios, fuzzy neural approaches and intelligent signal processing techniques play important roles for the developments of the wearable health care systems. This conference aims at providing a forum to discuss the recent advances on enabling technologies in Computational Intelligence and its applications for IoT.</p>
-                <a href="call-for-papers.html" class="read-more">Read More<br /><div id="read-more-underline"></div></a>
+                <a href="call-for-papers.php" class="read-more">Read More<br /><div id="read-more-underline"></div></a>
             </div>
         </section>
+
+        <!-- ICCIIoT Key Points -->
 
         <section id="conf-content-fluid" class="parallax container-fluid">
             <div class="cover"></div>
@@ -265,6 +209,8 @@
             </div>
         </section>
 
+        <!-- ICCIIoT 2018 Key Note Speaker -->
+
         <section id="key-note" class="container sub-topic">
             <h2><span class="bb-short-underline">Key Note Speaker</span></h2>
             <div class="row mem-individual">
@@ -286,6 +232,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- ICCIIoT 2018 Timeline -->
 
         <section id="timeline-fluid" class="container-fluid no-pad">
             <div class="cover"></div>
@@ -361,6 +309,8 @@
             </div>
         </section>
 
+        <!-- ICCIIoT Indexing -->
+
         <div class="index-bg sub-topic">
             <section id="indexing" class="container">
                 <h2><span class="bb-short-underline">Indexing</span></h2>
@@ -392,12 +342,16 @@
             </section>
         </div>
 
+        <!-- ICCIIoT 2018 Countdown -->
+
         <div id="counter-container" class="text-center sub-topic">
             <div class="countdown-text container">
                 <h2><span class="bb-short-underline-black-center">Countdown</span></h2>
                 <p>Enthusiastic minds will be all together on the same floor to exchange ideas, share the trends and converge towards a usable knowledge application in the fascinating world of IoT.</p>
                 <p>Yes, with you we are also counting moments, see you during the workshop. </p>
             </div>
+
+            <!-- Countdown Timer -->
 
             <section id="counter" class="container">
                 <div class="cover-dark"></div>
@@ -427,6 +381,8 @@
                 </div>
             </section>
         </div>
+
+        <!-- ICCIIoT 2018 Conference Tracks -->
 
         <div class="tracks-bg">
             <section id="tracks" class="container sub-topic">
@@ -524,29 +480,15 @@
             </section>
         </div>
 
-        <footer class="container-fluid">
-            <div class="row">
-                <div class="col-md-8 col-sm-12">
-                    <div class="disclaimer">Disclaimer: This site is designed by <a href="web-team-nita.html">Web Team @ NIT Agartala</a> and the contents are provided by IAASSE.</div>
-                    <div class="copyright">
-                        Copyright ©2018. All trade marks and images are the property of their respective owners.
-                    </div>
-                </div>
-                <div class="social col-md-4 col-sm-12 text-right">
-                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="mailto:icciiot2018@nita.ac.in"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </footer>
+        <!-- Footer -->
+        <?= $footer ?>
 
-
-
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
-        <script src="js/common.js"></script>
+        <!-- Scripts -->
+        <?= $script ?>
         <script src="js/custom.js"></script>
+        <script>
+            $("#nav-home").addClass("active");
+        </script>
 
     </body>
 </html>
